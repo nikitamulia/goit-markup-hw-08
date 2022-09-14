@@ -1,0 +1,19 @@
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/function';
+
+
+@import './components/social-list';
+@import './components/portfolio-gallery';
+
+@import './sections/header-mobile';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/advantages';
+@import './sections/gallery';
+@import './sections/team';
+@import './sections/cliens';
+@import './sections/footer';
+@import './sections/modal';
+@import './sections/portfolio';

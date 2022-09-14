@@ -1,0 +1,36 @@
+.portfolio-hero{
+    padding: 94px 0;
+}
+
+
+.portfolio-hero__list{
+ display: flex;
+ gap: 8px;
+ margin-bottom: 50px;
+ justify-content: center;
+ 
+}
+
+
+.portfolio-hero__button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover{
+        background-color: var(--accent-color);
+        color: var(--primary-text-color-theme-dark);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+

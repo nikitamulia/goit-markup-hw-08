@@ -1,0 +1,3 @@
+@function item-base($colums, $gap) {
+    @return calc((100% - ($gap * ($colums - 1))) / $colums);
+}
