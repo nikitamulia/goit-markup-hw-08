@@ -4,6 +4,10 @@
     @include max767{
         display: none;
     }
+
+    @include min768-max1199{
+        display: none;
+    }
 }
 
 .gallery__head{

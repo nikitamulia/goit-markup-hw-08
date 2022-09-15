@@ -1,13 +1,33 @@
 .portfolio-hero{
+   padding: 60px 0;
+   
+    @include min1200{
     padding: 94px 0;
+   }
 }
 
 
 .portfolio-hero__list{
- display: flex;
- gap: 8px;
- margin-bottom: 50px;
- justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    padding-bottom: 30px;
+
+    @include min768-max1199{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+ 
+    @include min1200{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+ }
  
 }
 

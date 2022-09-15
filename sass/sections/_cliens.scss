@@ -4,6 +4,10 @@
     padding: 60px 0;
 }    
 
+@include min768-max1199{
+    padding: 60px 0;
+}
+
 @include min1200{
     padding: 94px 0;
 }
@@ -19,6 +23,15 @@
         letter-spacing: 0.03em;
         color:var(--primary-text-color);
         margin-bottom: 50px;
+    }
+
+    @include min768-max1199{
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+
     }
 
     @include max767{
@@ -42,6 +55,14 @@
 
     }
 
+    @include min768-max1199{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
   @include min1200{
     display: flex;
     align-items:center;
@@ -55,12 +76,20 @@
     @include max767{
         width: item-base(2, 30px);
         border: 1px solid #AFB1B8;
+        border-radius: 5px;
        
+    }
+
+    @include min768-max1199{
+        width: item-base(3, 30px);
+        border: 1px solid #AFB1B8;
+        border-radius: 5px;
     }
   
     @include min1200{
     width: item-base(6, 30px);
     border: 1px solid #AFB1B8;
+    border-radius: 5px;
    }
 }
 

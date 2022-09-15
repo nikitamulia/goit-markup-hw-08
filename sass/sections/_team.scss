@@ -7,6 +7,11 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    @include min768-max1199{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 .team__head{
     font-weight: 700;
@@ -19,6 +24,19 @@
         font-size: 28px;
         margin-bottom: 30px;
     }
+
+
+    @include min768-max1199{
+        
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+
+        
+    }
+    
 }
 
 .team__list{
@@ -31,6 +49,14 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    @include min768-max1199{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .item-block__item{
@@ -41,6 +67,10 @@
 
     @include max767{
         width: 100%;
+    }
+
+    @include min768-max1199{
+        width: item-base(2, 30px);
     }
 
     @include min1200{

@@ -6,6 +6,11 @@
         padding-top:60px;
         padding-bottom: 60px;
     }
+
+    @include min768-max1199{
+        padding-top:60px;
+        padding-bottom: 60px;
+    }
 }
 
 .advantages__visually-hidden{
@@ -28,6 +33,16 @@
     @include max767{
         flex-direction: column;
     }
+
+    @include min768-max1199{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+       
+    }
+   
 }
 
 .advantages__item{
@@ -38,6 +53,11 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    @include min768-max1199{
+        width: item-base(2, 30px);
+    }
+   
 
     @include min1200{
         width: item-base(4, 30px);
