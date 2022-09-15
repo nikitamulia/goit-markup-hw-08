@@ -20,7 +20,7 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -131,6 +131,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -162,6 +163,8 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-gallery__item {
+    display: flex;
+    flex-direction: column;
     width: calc((100% - 30px) / 2);
   }
 }
@@ -195,6 +198,7 @@ body {
 }
 
 .container-descr {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid rgba(238, 238, 238, 0.9333333333);
   border-top: transparent;
@@ -519,11 +523,14 @@ body.scroll-lock {
 }
 
 .hero {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-  height: 600px;
 }
 @media screen and (max-width: 767px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/imgmobile.jpg);
     padding: 118px 0;
     height: 400px;
     max-width: 100%;
@@ -532,24 +539,40 @@ body.scroll-lock {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/imgtablet.jpg);
     height: 400px;
     padding: 118px 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/background.jpg);
     height: 600px;
     padding: 200px 0;
   }
 }
 
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/imgmobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/imgtablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/Img@2x-17.jpg");
+  }
+}
 .hero__head {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin: auto;
-  width: 696px;
   text-align: center;
   color: var(--primary-text-color-theme-dark);
   margin-bottom: 30px;
@@ -561,7 +584,7 @@ body.scroll-lock {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    width: 360px;
+    max-width: 360px;
     color: var(--primary-text-color-theme-dark);
   }
 }
@@ -683,6 +706,7 @@ body.scroll-lock {
 }
 
 .advantages__item-title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -789,6 +813,11 @@ body.scroll-lock {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__head {
+    margin-bottom: 50px;
   }
 }
 
@@ -1278,7 +1307,7 @@ body.scroll-lock {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-subscribe__input {
-    width: 100%;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1632,7 +1661,6 @@ input, textarea {
   .portfolio-hero__list {
     display: flex;
     gap: 8px;
-    margin-bottom: 50px;
     justify-content: center;
   }
 }
@@ -1640,7 +1668,7 @@ input, textarea {
   .portfolio-hero__list {
     display: flex;
     gap: 8px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     justify-content: center;
   }
 }

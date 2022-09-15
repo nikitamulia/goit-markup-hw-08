@@ -18,7 +18,7 @@
         max-width: 480px;
     }
     @include min768 {
-        max-width: 100%;
+        max-width: 768px;
     }
     @include min1200 {
         max-width: 1200px;

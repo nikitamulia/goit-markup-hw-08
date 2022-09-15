@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-mobile">
+        <div class="header-mobile container">
             <a class="header__logo link" href="./index.html">
                 Web<span class="accent">Studio</span> 
             </a>
@@ -164,15 +164,42 @@
                 <h2 class="gallery__head">Чим ми займаємося</h2>
                 <ul class="gallery__list list">
                     <li class="gallery__item">
-                        <img class="gallery__img" src="images/img.jpg" alt="фото1" width="370"/>
+                        <picture>
+                            <source
+                              srcset="./images/img.jpg 1x, ./images/desktop1/img@2x-14.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            
+                            <img class="gallery__img" src="images/img.jpg" alt="фото1"/>
+                        </picture>
+                       
                         <p class="gallery__paragraph">ДЕСКТОПНІ ДОДАТКИ</p>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="images/img-2.jpg" alt="фото2" width="370"/>
+                        <picture>
+                            <source
+                              srcset="./images/img-2.jpg 1x, ./images/desktop1/img@2x.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            
+                            <img class="gallery__img" src="images/img-2.jpg" alt="фото2"/>
+                        </picture>
+                        
                         <p class="gallery__paragraph">МОБІЛЬНІ ДОДАТКИ</p>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="images/img-3.jpg" alt="фото3" width="370"/>
+                        <picture>
+                            <source
+                              srcset="./images/img-3.jpg 1x, ./images/desktop1/img@2x-2.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            
+                            <img class="gallery__img" src="images/img-3.jpg" alt="фото3"/>
+                        </picture>
+                      
                         <p class="gallery__paragraph">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                     </li>
                 </ul>
@@ -184,7 +211,26 @@
                 <h2 class="team__head">Наша команда</h2>
                 <ul class="team__list item-block list">
                     <li class="item-block__item">
-                        <img class="item-block__img" src="images/photo.jpg" alt="Ігор Дем'яненко" width="270"/>
+                      
+                        <picture>
+                            <source
+                              srcset="./images/photo.jpg 1x, ./images/desktop1/photo@2x-1.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/tablet1/tabphoto1.jpg 1x, ./images/tablet1/tabphoto1@2x.jpg 2x"
+                              media="(min-width:768px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/mobile1/photomob-1.jpg 1x, ./images/mobile1/photomob@2x-1.jpg 2x"
+                              media="(min-width:480px)"
+                              type="image/jpg" 
+                            />
+                            <img class="item-block__img" src="images/photo.jpg" alt="Ігор Дем'яненко"/>
+                        </picture>
+            
                         <div class="item-block__info">
                             <h3 class="item-block__name">Ігор Дем'яненко</h3>
                             <p class="item-block__profession">Product Designer</p>
@@ -221,7 +267,26 @@
                         </div>
                     </li>
                     <li class="item-block__item">
-                        <img class="item-block__img" src="images/photo-2.jpg" alt="Ольга Рєпіна" width="270"/>
+                        <picture>
+                            <source
+                              srcset="./images/photo-2.jpg 1x, ./images/desktop1/photo@2x-2.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/tablet1/tabphoto2.jpg 1x, ./images/tablet1/tabphoto@2x-2.jpg 2x"
+                              media="(min-width:768px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/mobile1/photomob-2.jpg 1x, ./images/mobile1/photomob@2x-2.jpg 2x"
+                              media="(min-width:480px)"
+                              type="image/jpg" 
+                            />
+                            <img class="item-block__img" src="./images/photo-2.jpg" alt="Ольга Рєпіна"/>
+                           
+                        </picture>
+                       
                         <div class="item-block__info">
                             <h3 class="item-block__name">Ольга Рєпіна</h3>
                             <p class="item-block__profession">Frontend Developer</p>
@@ -258,7 +323,26 @@
                         </div>
                     </li>
                     <li class="item-block__item">
-                        <img class="item-block__img" src="images/photo-3.jpg" alt="Микола Тарасов" width="270"/>
+                        <picture>
+                            <source
+                              srcset="./images/photo-3.jpg 1x, ./images/desktop1/photo@2x-3.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/tablet1/tabphoto3.jpg 1x, ./images/tablet1/tabphoto@2x-3.jpg 2x"
+                              media="(min-width:768px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/mobile1/photomob-3.jpg 1x, ./images/mobile1/photomob@2x-3.jpg 2x"
+                              media="(min-width:480px)"
+                              type="image/jpg" 
+                            />
+                            <img class="item-block__img" src="images/photo-3.jpg" alt="Микола Тарасов" />
+                           
+                        </picture>
+                       
                         <div class="item-block__info">
                             <h3 class="item-block__name">Микола Тарасов</h3>
                             <p class="item-block__profession">Marketing</p>
@@ -295,7 +379,26 @@
                         </div>
                     </li>
                     <li class="item-block__item">
-                        <img class="item-block__img" src="images/photo-4.jpg" alt="Михайло Єрмаков" width="270"/>
+                        <picture>
+                            <source
+                              srcset="./images/photo-4.jpg 1x, ./images/desktop1/photo@2x-4.jpg 2x"
+                              media="(min-width:1200px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/tablet1/tabphoto4.jpg 1x, ./images/tablet1/tabphoto@2x-4.jpg 2x"
+                              media="(min-width:768px)"
+                              type="image/jpg" 
+                            />
+                            <source
+                              srcset="./images/mobile1/photomob-4.jpg 1x, ./images/mobile1/photomob@2x-4.jpg 2x"
+                              media="(min-width:480px)"
+                              type="image/jpg" 
+                            />
+                            <img class="item-block__img" src="images/photo-4.jpg" alt="Михайло Єрмаков" />
+                           
+                        </picture>
+                        
                         <div class="item-block__info">
                             <h3 class="item-block__name">Михайло Єрмаков</h3>
                             <p class="item-block__profession">UI Designer</p>
