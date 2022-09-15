@@ -999,7 +999,7 @@ body.scroll-lock {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
+    padding: 60px 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1218,6 +1218,7 @@ body.scroll-lock {
     text-align: center;
     justify-content: center;
     padding-top: 60px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1225,6 +1226,7 @@ body.scroll-lock {
     display: block;
     text-align: center;
     justify-content: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1260,7 +1262,7 @@ body.scroll-lock {
 
 @media screen and (max-width: 767px) {
   .form-subscribe__input {
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1276,7 +1278,7 @@ body.scroll-lock {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-subscribe__input {
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
